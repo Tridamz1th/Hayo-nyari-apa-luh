@@ -53,8 +53,8 @@
         }
 
         /* Efek maju-mundur */
-        @keyframes pulse {
-            0%, 100% {
+        @
+            0%, 100% {l
                 transform: scale(1);
             }
             50% {
@@ -62,7 +62,7 @@
             }
         }
 
-        @media (max-width: 600px) {
+        @idth: 600px) {
             .text {
                 font-size: 1.5rem;
             }
@@ -81,11 +81,7 @@
             margin: 2px 0;
         }
 
-        .monkey {
-            position: absolute;
-            font-size: 2rem;
-            animation: float 20s linear infinite;
-            opacity: 0.6;
+        .
             filter: drop-shadow(0 0 5px rgba(255, 204, 0, 0.5));
         }
 
@@ -107,27 +103,16 @@
     </div>
 
     <script>
-        // Animasi warna acak
-        const textElement = document.getElementById('mainText');
-        function changeColor() {
-            const r = Math.floor(Math.random() * 256);
-            const g = Math.floor(Math.random() * 256);
+        // 
             const b = Math.floor(Math.random() * 256);
             textElement.style.color = `rgb(${r}, ${g}, ${b})`;
         }
         setInterval(changeColor, 200); // Ganti warna setiap 200ms
-
-        // Animasi monyet
-        function createMonkey() {
-            const monkey = document.createElement('div');
-            monkey.className = 'monkey';
-            monkey.innerHTML = '🐒';
-            monkey.style.left = Math.random() * 100 + 'vw';
+landom() * 100 + 'vw';
             monkey.style.top = Math.random() * 100 + 'vh';
             document.body.appendChild(monkey);
 
-            setTimeout(() => {
-                monkey.remove();
+            e();
             }, 20000);
         }
 
