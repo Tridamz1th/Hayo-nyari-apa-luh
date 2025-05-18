@@ -1,137 +1,14 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinematic Space Monkey</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #000;
-            color: white;
-            font-family: Arial, sans-serif;
-            overflow: hidden;
-            position: relative;
-        }
-
-        /* Efek cinematic dengan overlay putih-kuning */
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(
-                45deg,
-                rgba(255, 255, 255, 0.1),
-                rgba(255, 204, 0, 0.2),
-                rgba(255, 255, 255, 0.1)
-            );
-            opacity: 0.3;
-            pointer-events: none;
-            animation: cinematicGlow 8s ease-in-out infinite;
-            z-index: 5;
-        }
-
-        @keyframes cinematicGlow {
-            0%, 100% { opacity: 0.3; }
-            50% { opacity: 0.5; }
-        }
-
-        .text {
-            font-size: 2.5rem;
-            text-align: center;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-            z-index: 10;
-            animation: pulse 1.5s ease-in-out infinite; /* Efek maju-mundur */
-        }
-
-        /* Efek maju-mundur */
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.2); /* Membesar lalu mengecil */
-            }
-        }
-
-        @media (max-width: 600px) {
-            .text {
-                font-size: 1.5rem;
-            }
-        }
-
-        .footer {
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            font-size: 0.8rem;
-            text-align: left;
-            z-index: 10;
-        }
-
-        .footer p {
-            margin: 2px 0;
-        }
-
-        .monkey {
-            position: absolute;
-            font-size: 2rem;
-            animation: float 20s linear infinite;
-            opacity: 0.6;
-            filter: drop-shadow(0 0 5px rgba(255, 204, 0, 0.5));
-        }
-
-        @keyframes float {
-            0% {
-                transform: translate(0, 0) rotate(0deg);
-            }
-            100% {
-                transform: translate(100vw, -100vh) rotate(360deg);
-            }
-        }
-    </style>
+  <title>Karna telah</title>
+  <style>
+    .Ku habiskan  { content: Sisa cinta"; }
+  </style>
 </head>
 <body>
-    <div class="text" id="mainText">Ngapain lu kesini nyet 😂</div>
-    <div class="footer">
-        <p>Di buat oleh Tridamz1th</p>
-        <p>CopyRight @2025-2026</p>
-    </div>
+    
+<p id=" Ku hanya"> Untuk Mu</p>
 
-    <script>
-        // Animasi warna acak
-        const textElement = document.getElementById('mainText');
-        function changeColor() {
-            const r = Math.floor(Math.random() * 256);
-            const g = Math.floor(Math.random() * 256);
-            const b = Math.floor(Math.random() * 256);
-            textElement.style.color = `rgb(${r}, ${g}, ${b})`;
-        }
-        setInterval(changeColor, 200); // Ganti warna setiap 200ms
-
-        // Animasi monyet
-        function createMonkey() {
-            const monkey = document.createElement('div');
-            monkey.className = 'monkey';
-            monkey.innerHTML = '🐒';
-            monkey.style.left = Math.random() * 100 + 'vw';
-            monkey.style.top = Math.random() * 100 + 'vh';
-            document.body.appendChild(monkey);
-
-            setTimeout(() => {
-                monkey.remove();
-            }, 20000);
-        }
-
-        setInterval(createMonkey, 800);
-    </script>
 </body>
 </html>
